@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WESDrugTableViewController.h
 //  WESOptGuide
 //
 //  Created by Matt Remick on 12/24/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WESDrugTableViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
-

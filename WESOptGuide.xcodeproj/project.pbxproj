@@ -7,13 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E23547F1ACC8D66009B0DB0 /* WESQualityOfLifeFooterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E23547E1ACC8D66009B0DB0 /* WESQualityOfLifeFooterTableViewCell.m */; };
+		3E2354821AD0D741009B0DB0 /* WESCISSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2354811AD0D741009B0DB0 /* WESCISSViewController.m */; };
+		3E4B1F2A1AA3F39600EB20EC /* Antibiotics.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E4B1F291AA3F39600EB20EC /* Antibiotics.json */; };
 		3E4FE1151A4BD95F00A2B993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE1141A4BD95F00A2B993 /* main.m */; };
 		3E4FE1181A4BD95F00A2B993 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE1171A4BD95F00A2B993 /* AppDelegate.m */; };
-		3E4FE11B1A4BD95F00A2B993 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE11A1A4BD95F00A2B993 /* ViewController.m */; };
 		3E4FE11E1A4BD95F00A2B993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4FE11C1A4BD95F00A2B993 /* Main.storyboard */; };
 		3E4FE1201A4BD95F00A2B993 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4FE11F1A4BD95F00A2B993 /* Images.xcassets */; };
 		3E4FE1231A4BD95F00A2B993 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E4FE1211A4BD95F00A2B993 /* LaunchScreen.xib */; };
 		3E4FE12F1A4BD95F00A2B993 /* WESOptGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE12E1A4BD95F00A2B993 /* WESOptGuideTests.m */; };
+		3E4FE13A1A4BDA0C00A2B993 /* WESDrugTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE1391A4BDA0C00A2B993 /* WESDrugTableViewController.m */; };
+		3E4FE13D1A4BDB0900A2B993 /* WESDrug.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE13C1A4BDB0900A2B993 /* WESDrug.m */; };
+		3E4FE1401A4BE21200A2B993 /* WESDrugDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE13F1A4BE21200A2B993 /* WESDrugDetailViewController.m */; };
+		3E4FE1471A4BE94A00A2B993 /* WESAcronymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE1461A4BE94A00A2B993 /* WESAcronymViewController.m */; };
+		3E4FE14A1A4BE97900A2B993 /* WESAcronym.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE1491A4BE97900A2B993 /* WESAcronym.m */; };
+		3EC26C811ABA208500FD0A88 /* WESDrugTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC26C801ABA208500FD0A88 /* WESDrugTransition.m */; };
+		3ECB0A8B1AC2536D00A2AAAB /* WESJNC8SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB0A8A1AC2536D00A2AAAB /* WESJNC8SummaryViewController.m */; };
+		3ECB0A8E1AC3590000A2AAAB /* WESQualityOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB0A8D1AC3590000A2AAAB /* WESQualityOfLifeViewController.m */; };
+		3ECB0A911AC3623D00A2AAAB /* WESQualityQuestionCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB0A901AC3623D00A2AAAB /* WESQualityQuestionCellTableViewCell.m */; };
+		3EF6F7E01AA3FE980058D909 /* Anti_Allergy_Medications.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7DF1AA3FE980058D909 /* Anti_Allergy_Medications.json */; };
+		3EF6F7E21AA4D25A0058D909 /* AntiInflamatory.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7E11AA4D25A0058D909 /* AntiInflamatory.json */; };
+		3EF6F7E41AA4D42E0058D909 /* steroidAntibiotic.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7E31AA4D42E0058D909 /* steroidAntibiotic.json */; };
+		3EF6F7E61AA4D9630058D909 /* nsAids.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7E51AA4D9630058D909 /* nsAids.json */; };
+		3EF6F7E81AA6B11A0058D909 /* antivirals.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7E71AA6B11A0058D909 /* antivirals.json */; };
+		3EF6F7EA1AA6B2650058D909 /* glaucoma.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7E91AA6B2650058D909 /* glaucoma.json */; };
+		3EF6F7EF1AA6B7010058D909 /* redEye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7EB1AA6B7010058D909 /* redEye.jpg */; };
+		3EF6F7F01AA6B7010058D909 /* visualLoss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7EC1AA6B7010058D909 /* visualLoss.jpg */; };
+		3EF6F7F11AA6B7010058D909 /* epiphora.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7ED1AA6B7010058D909 /* epiphora.jpg */; };
+		3EF6F7F21AA6B7010058D909 /* diplopia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6F7EE1AA6B7010058D909 /* diplopia.jpg */; };
+		3EF6F7F51AA6B8890058D909 /* WESFlowChartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6F7F41AA6B8890058D909 /* WESFlowChartTableViewController.m */; };
+		3EF6F7F81AA6B8C60058D909 /* WESFlowChartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6F7F71AA6B8C60058D909 /* WESFlowChartTableViewCell.m */; };
+		3EF6F7FB1AA7B7D80058D909 /* WESFlowChartDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6F7FA1AA7B7D80058D909 /* WESFlowChartDetailViewController.m */; };
+		3EF6F7FE1AA7CBE30058D909 /* WESAcronymTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6F7FD1AA7CBE30058D909 /* WESAcronymTableViewCell.m */; };
+		3EF6F8061AA7D91F0058D909 /* WESHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6F8051AA7D91F0058D909 /* WESHeaderTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +53,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E23547D1ACC8D66009B0DB0 /* WESQualityOfLifeFooterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESQualityOfLifeFooterTableViewCell.h; sourceTree = "<group>"; };
+		3E23547E1ACC8D66009B0DB0 /* WESQualityOfLifeFooterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESQualityOfLifeFooterTableViewCell.m; sourceTree = "<group>"; };
+		3E2354801AD0D741009B0DB0 /* WESCISSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESCISSViewController.h; sourceTree = "<group>"; };
+		3E2354811AD0D741009B0DB0 /* WESCISSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESCISSViewController.m; sourceTree = "<group>"; };
+		3E4B1F291AA3F39600EB20EC /* Antibiotics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Antibiotics.json; sourceTree = "<group>"; };
 		3E4FE10F1A4BD95F00A2B993 /* WESOptGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WESOptGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4FE1131A4BD95F00A2B993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4FE1141A4BD95F00A2B993 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E4FE1161A4BD95F00A2B993 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E4FE1171A4BD95F00A2B993 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E4FE1191A4BD95F00A2B993 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E4FE11A1A4BD95F00A2B993 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3E4FE11D1A4BD95F00A2B993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E4FE11F1A4BD95F00A2B993 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E4FE1221A4BD95F00A2B993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3E4FE1281A4BD95F00A2B993 /* WESOptGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WESOptGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4FE12D1A4BD95F00A2B993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4FE12E1A4BD95F00A2B993 /* WESOptGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WESOptGuideTests.m; sourceTree = "<group>"; };
+		3E4FE1381A4BDA0C00A2B993 /* WESDrugTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESDrugTableViewController.h; sourceTree = "<group>"; };
+		3E4FE1391A4BDA0C00A2B993 /* WESDrugTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESDrugTableViewController.m; sourceTree = "<group>"; };
+		3E4FE13B1A4BDB0900A2B993 /* WESDrug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESDrug.h; sourceTree = "<group>"; };
+		3E4FE13C1A4BDB0900A2B993 /* WESDrug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESDrug.m; sourceTree = "<group>"; };
+		3E4FE13E1A4BE21200A2B993 /* WESDrugDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESDrugDetailViewController.h; sourceTree = "<group>"; };
+		3E4FE13F1A4BE21200A2B993 /* WESDrugDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESDrugDetailViewController.m; sourceTree = "<group>"; };
+		3E4FE1451A4BE94A00A2B993 /* WESAcronymViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESAcronymViewController.h; sourceTree = "<group>"; };
+		3E4FE1461A4BE94A00A2B993 /* WESAcronymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESAcronymViewController.m; sourceTree = "<group>"; };
+		3E4FE1481A4BE97900A2B993 /* WESAcronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESAcronym.h; sourceTree = "<group>"; };
+		3E4FE1491A4BE97900A2B993 /* WESAcronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESAcronym.m; sourceTree = "<group>"; };
+		3EC26C7F1ABA208500FD0A88 /* WESDrugTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESDrugTransition.h; sourceTree = "<group>"; };
+		3EC26C801ABA208500FD0A88 /* WESDrugTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESDrugTransition.m; sourceTree = "<group>"; };
+		3ECB0A891AC2536D00A2AAAB /* WESJNC8SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESJNC8SummaryViewController.h; sourceTree = "<group>"; };
+		3ECB0A8A1AC2536D00A2AAAB /* WESJNC8SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESJNC8SummaryViewController.m; sourceTree = "<group>"; };
+		3ECB0A8C1AC3590000A2AAAB /* WESQualityOfLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESQualityOfLifeViewController.h; sourceTree = "<group>"; };
+		3ECB0A8D1AC3590000A2AAAB /* WESQualityOfLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESQualityOfLifeViewController.m; sourceTree = "<group>"; };
+		3ECB0A8F1AC3623D00A2AAAB /* WESQualityQuestionCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESQualityQuestionCellTableViewCell.h; sourceTree = "<group>"; };
+		3ECB0A901AC3623D00A2AAAB /* WESQualityQuestionCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESQualityQuestionCellTableViewCell.m; sourceTree = "<group>"; };
+		3EF6F7DF1AA3FE980058D909 /* Anti_Allergy_Medications.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Anti_Allergy_Medications.json; sourceTree = "<group>"; };
+		3EF6F7E11AA4D25A0058D909 /* AntiInflamatory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AntiInflamatory.json; sourceTree = "<group>"; };
+		3EF6F7E31AA4D42E0058D909 /* steroidAntibiotic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = steroidAntibiotic.json; sourceTree = "<group>"; };
+		3EF6F7E51AA4D9630058D909 /* nsAids.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nsAids.json; sourceTree = "<group>"; };
+		3EF6F7E71AA6B11A0058D909 /* antivirals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = antivirals.json; sourceTree = "<group>"; };
+		3EF6F7E91AA6B2650058D909 /* glaucoma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = glaucoma.json; sourceTree = "<group>"; };
+		3EF6F7EB1AA6B7010058D909 /* redEye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redEye.jpg; sourceTree = "<group>"; };
+		3EF6F7EC1AA6B7010058D909 /* visualLoss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = visualLoss.jpg; sourceTree = "<group>"; };
+		3EF6F7ED1AA6B7010058D909 /* epiphora.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = epiphora.jpg; sourceTree = "<group>"; };
+		3EF6F7EE1AA6B7010058D909 /* diplopia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diplopia.jpg; sourceTree = "<group>"; };
+		3EF6F7F31AA6B8890058D909 /* WESFlowChartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESFlowChartTableViewController.h; sourceTree = "<group>"; };
+		3EF6F7F41AA6B8890058D909 /* WESFlowChartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESFlowChartTableViewController.m; sourceTree = "<group>"; };
+		3EF6F7F61AA6B8C60058D909 /* WESFlowChartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESFlowChartTableViewCell.h; sourceTree = "<group>"; };
+		3EF6F7F71AA6B8C60058D909 /* WESFlowChartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESFlowChartTableViewCell.m; sourceTree = "<group>"; };
+		3EF6F7F91AA7B7D80058D909 /* WESFlowChartDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESFlowChartDetailViewController.h; sourceTree = "<group>"; };
+		3EF6F7FA1AA7B7D80058D909 /* WESFlowChartDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESFlowChartDetailViewController.m; sourceTree = "<group>"; };
+		3EF6F7FC1AA7CBE30058D909 /* WESAcronymTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESAcronymTableViewCell.h; sourceTree = "<group>"; };
+		3EF6F7FD1AA7CBE30058D909 /* WESAcronymTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESAcronymTableViewCell.m; sourceTree = "<group>"; };
+		3EF6F8041AA7D91F0058D909 /* WESHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESHeaderTableViewCell.h; sourceTree = "<group>"; };
+		3EF6F8051AA7D91F0058D909 /* WESHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESHeaderTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +150,10 @@
 			children = (
 				3E4FE1161A4BD95F00A2B993 /* AppDelegate.h */,
 				3E4FE1171A4BD95F00A2B993 /* AppDelegate.m */,
-				3E4FE1191A4BD95F00A2B993 /* ViewController.h */,
-				3E4FE11A1A4BD95F00A2B993 /* ViewController.m */,
-				3E4FE11C1A4BD95F00A2B993 /* Main.storyboard */,
-				3E4FE11F1A4BD95F00A2B993 /* Images.xcassets */,
-				3E4FE1211A4BD95F00A2B993 /* LaunchScreen.xib */,
-				3E4FE1121A4BD95F00A2B993 /* Supporting Files */,
+				3E4FE1431A4BE90C00A2B993 /* View */,
+				3E4FE1421A4BE90300A2B993 /* Controller */,
+				3E4FE1411A4BE8F200A2B993 /* Model */,
+				3E4FE1441A4BE92100A2B993 /* Other */,
 			);
 			path = WESOptGuide;
 			sourceTree = "<group>";
@@ -98,6 +163,17 @@
 			children = (
 				3E4FE1131A4BD95F00A2B993 /* Info.plist */,
 				3E4FE1141A4BD95F00A2B993 /* main.m */,
+				3EF6F7EB1AA6B7010058D909 /* redEye.jpg */,
+				3EF6F7EC1AA6B7010058D909 /* visualLoss.jpg */,
+				3EF6F7ED1AA6B7010058D909 /* epiphora.jpg */,
+				3EF6F7EE1AA6B7010058D909 /* diplopia.jpg */,
+				3E4B1F291AA3F39600EB20EC /* Antibiotics.json */,
+				3EF6F7DF1AA3FE980058D909 /* Anti_Allergy_Medications.json */,
+				3EF6F7E11AA4D25A0058D909 /* AntiInflamatory.json */,
+				3EF6F7E31AA4D42E0058D909 /* steroidAntibiotic.json */,
+				3EF6F7E51AA4D9630058D909 /* nsAids.json */,
+				3EF6F7E71AA6B11A0058D909 /* antivirals.json */,
+				3EF6F7E91AA6B2650058D909 /* glaucoma.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +193,70 @@
 				3E4FE12D1A4BD95F00A2B993 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E4FE1411A4BE8F200A2B993 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E4FE13B1A4BDB0900A2B993 /* WESDrug.h */,
+				3E4FE13C1A4BDB0900A2B993 /* WESDrug.m */,
+				3E4FE1481A4BE97900A2B993 /* WESAcronym.h */,
+				3E4FE1491A4BE97900A2B993 /* WESAcronym.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3E4FE1421A4BE90300A2B993 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E4FE1381A4BDA0C00A2B993 /* WESDrugTableViewController.h */,
+				3E4FE1391A4BDA0C00A2B993 /* WESDrugTableViewController.m */,
+				3E4FE13E1A4BE21200A2B993 /* WESDrugDetailViewController.h */,
+				3E4FE13F1A4BE21200A2B993 /* WESDrugDetailViewController.m */,
+				3E4FE1451A4BE94A00A2B993 /* WESAcronymViewController.h */,
+				3E4FE1461A4BE94A00A2B993 /* WESAcronymViewController.m */,
+				3EF6F7F31AA6B8890058D909 /* WESFlowChartTableViewController.h */,
+				3EF6F7F41AA6B8890058D909 /* WESFlowChartTableViewController.m */,
+				3EF6F7F91AA7B7D80058D909 /* WESFlowChartDetailViewController.h */,
+				3EF6F7FA1AA7B7D80058D909 /* WESFlowChartDetailViewController.m */,
+				3ECB0A891AC2536D00A2AAAB /* WESJNC8SummaryViewController.h */,
+				3ECB0A8A1AC2536D00A2AAAB /* WESJNC8SummaryViewController.m */,
+				3ECB0A8C1AC3590000A2AAAB /* WESQualityOfLifeViewController.h */,
+				3ECB0A8D1AC3590000A2AAAB /* WESQualityOfLifeViewController.m */,
+				3E2354801AD0D741009B0DB0 /* WESCISSViewController.h */,
+				3E2354811AD0D741009B0DB0 /* WESCISSViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3E4FE1431A4BE90C00A2B993 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E4FE11C1A4BD95F00A2B993 /* Main.storyboard */,
+				3EF6F7F61AA6B8C60058D909 /* WESFlowChartTableViewCell.h */,
+				3EF6F7F71AA6B8C60058D909 /* WESFlowChartTableViewCell.m */,
+				3EF6F7FC1AA7CBE30058D909 /* WESAcronymTableViewCell.h */,
+				3EF6F7FD1AA7CBE30058D909 /* WESAcronymTableViewCell.m */,
+				3EF6F8041AA7D91F0058D909 /* WESHeaderTableViewCell.h */,
+				3EF6F8051AA7D91F0058D909 /* WESHeaderTableViewCell.m */,
+				3EC26C7F1ABA208500FD0A88 /* WESDrugTransition.h */,
+				3EC26C801ABA208500FD0A88 /* WESDrugTransition.m */,
+				3ECB0A8F1AC3623D00A2AAAB /* WESQualityQuestionCellTableViewCell.h */,
+				3ECB0A901AC3623D00A2AAAB /* WESQualityQuestionCellTableViewCell.m */,
+				3E23547D1ACC8D66009B0DB0 /* WESQualityOfLifeFooterTableViewCell.h */,
+				3E23547E1ACC8D66009B0DB0 /* WESQualityOfLifeFooterTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3E4FE1441A4BE92100A2B993 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3E4FE11F1A4BD95F00A2B993 /* Images.xcassets */,
+				3E4FE1211A4BD95F00A2B993 /* LaunchScreen.xib */,
+				3E4FE1121A4BD95F00A2B993 /* Supporting Files */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +339,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF6F7EA1AA6B2650058D909 /* glaucoma.json in Resources */,
+				3EF6F7E61AA4D9630058D909 /* nsAids.json in Resources */,
+				3E4B1F2A1AA3F39600EB20EC /* Antibiotics.json in Resources */,
+				3EF6F7E41AA4D42E0058D909 /* steroidAntibiotic.json in Resources */,
 				3E4FE11E1A4BD95F00A2B993 /* Main.storyboard in Resources */,
+				3EF6F7F21AA6B7010058D909 /* diplopia.jpg in Resources */,
+				3EF6F7F11AA6B7010058D909 /* epiphora.jpg in Resources */,
 				3E4FE1231A4BD95F00A2B993 /* LaunchScreen.xib in Resources */,
+				3EF6F7EF1AA6B7010058D909 /* redEye.jpg in Resources */,
+				3EF6F7E01AA3FE980058D909 /* Anti_Allergy_Medications.json in Resources */,
 				3E4FE1201A4BD95F00A2B993 /* Images.xcassets in Resources */,
+				3EF6F7E81AA6B11A0058D909 /* antivirals.json in Resources */,
+				3EF6F7F01AA6B7010058D909 /* visualLoss.jpg in Resources */,
+				3EF6F7E21AA4D25A0058D909 /* AntiInflamatory.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +370,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E4FE11B1A4BD95F00A2B993 /* ViewController.m in Sources */,
+				3E2354821AD0D741009B0DB0 /* WESCISSViewController.m in Sources */,
+				3ECB0A8E1AC3590000A2AAAB /* WESQualityOfLifeViewController.m in Sources */,
+				3E4FE13A1A4BDA0C00A2B993 /* WESDrugTableViewController.m in Sources */,
+				3EF6F7F81AA6B8C60058D909 /* WESFlowChartTableViewCell.m in Sources */,
+				3ECB0A911AC3623D00A2AAAB /* WESQualityQuestionCellTableViewCell.m in Sources */,
+				3E4FE14A1A4BE97900A2B993 /* WESAcronym.m in Sources */,
+				3EF6F7FE1AA7CBE30058D909 /* WESAcronymTableViewCell.m in Sources */,
+				3ECB0A8B1AC2536D00A2AAAB /* WESJNC8SummaryViewController.m in Sources */,
+				3E4FE13D1A4BDB0900A2B993 /* WESDrug.m in Sources */,
+				3E23547F1ACC8D66009B0DB0 /* WESQualityOfLifeFooterTableViewCell.m in Sources */,
+				3EC26C811ABA208500FD0A88 /* WESDrugTransition.m in Sources */,
+				3E4FE1401A4BE21200A2B993 /* WESDrugDetailViewController.m in Sources */,
+				3EF6F7F51AA6B8890058D909 /* WESFlowChartTableViewController.m in Sources */,
+				3EF6F7FB1AA7B7D80058D909 /* WESFlowChartDetailViewController.m in Sources */,
 				3E4FE1181A4BD95F00A2B993 /* AppDelegate.m in Sources */,
+				3E4FE1471A4BE94A00A2B993 /* WESAcronymViewController.m in Sources */,
+				3EF6F8061AA7D91F0058D909 /* WESHeaderTableViewCell.m in Sources */,
 				3E4FE1151A4BD95F00A2B993 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +578,7 @@
 				3E4FE1341A4BD95F00A2B993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E4FE1351A4BD95F00A2B993 /* Build configuration list for PBXNativeTarget "WESOptGuideTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +587,7 @@
 				3E4FE1371A4BD95F00A2B993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
