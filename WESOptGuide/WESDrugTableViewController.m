@@ -12,8 +12,9 @@
 #import "WESAcronymTableViewCell.h"
 #import "WESHeaderTableViewCell.h"
 #import "WESDrugTransition.h"
+#import "WESDrugTableCell.h"
 
-@interface WESDrugTableViewController () <UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate>
+@interface WESDrugTableViewController () <UITableViewDataSource,UITableViewDelegate/*UINavigationControllerDelegate*/>
 
 @property (nonatomic, strong) NSMutableArray *antibioticDrugs;
 @property (nonatomic, strong) NSMutableArray *antiAllergyDrugs;
@@ -47,16 +48,16 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.navigationController.delegate = self;
+//    self.navigationController.delegate = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
     // Stop being the navigation controller's delegate
-    if (self.navigationController.delegate == self) {
-        self.navigationController.delegate = nil;
-    }
+//    if (self.navigationController.delegate == self) {
+//        self.navigationController.delegate = nil;
+//    }
 }
 
 - (void)initAntibiotic {
@@ -248,7 +249,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    WESAcronymTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"acronymCell" forIndexPath:indexPath];
+    WESDrugTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"drugCell" forIndexPath:indexPath];
     WESDrug *drug;
     if (indexPath.section == 0) {
         drug = [self.antibioticDrugs objectAtIndex:indexPath.row];
@@ -265,21 +266,24 @@
     } else if (indexPath.section == 6) {
         drug = [self.glaucoma objectAtIndex:indexPath.row];
     }
-    cell.mainLabel.text = drug.brand;
-    cell.detailLabel.text = [drug.genericName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];;
-    
+    cell.brandLabel.text = drug.brand;
+    //cell.detailLabel.text = [drug.genericName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];;
+    cell.genericNameLabel.text = drug.genericName;
+    cell.manufacturerLabel.text = drug.manufacturer;
+    cell.dosageLabel.text = drug.dosage;
+    cell.pediatricUseLabel.text = drug.pediactricUse;
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 73;
+    return 165;
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     WESHeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"header"];
     cell.headerLabel.text = [self headerTitleForSection:section];
-    cell.backgroundColor = [UIColor colorWithRed:44.0/255.0 green:254.0/255.0 blue:255.0/255.0 alpha:1.f];
+    cell.backgroundColor = [UIColor colorWithRed:52.0/255.0 green:152.0/255.0 blue:219.0/255.0 alpha:1.f];
     return cell;
 }
 
@@ -354,17 +358,17 @@
 
 #pragma mark - UINavigationControllerDelegate
 
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                  animationControllerForOperation:(UINavigationControllerOperation)operation
-                                               fromViewController:(UIViewController *)fromVC
-                                                 toViewController:(UIViewController *)toVC {
-    // Check if we're transitioning from this view controller to a DSLSecondViewController
-    if (fromVC == self && [toVC isKindOfClass:[WESDrugDetailViewController class]]) {
-        return [[WESDrugTransition alloc] init];
-    }
-    else {
-        return nil;
-    }
-}
+//- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+//                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+//                                               fromViewController:(UIViewController *)fromVC
+//                                                 toViewController:(UIViewController *)toVC {
+//    // Check if we're transitioning from this view controller to a DSLSecondViewController
+//    if (fromVC == self && [toVC isKindOfClass:[WESDrugDetailViewController class]]) {
+//        return [[WESDrugTransition alloc] init];
+//    }
+//    else {
+//        return nil;
+//    }
+//}
 
 @end

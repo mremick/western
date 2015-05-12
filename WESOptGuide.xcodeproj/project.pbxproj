@@ -21,6 +21,7 @@
 		3E4FE1401A4BE21200A2B993 /* WESDrugDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE13F1A4BE21200A2B993 /* WESDrugDetailViewController.m */; };
 		3E4FE1471A4BE94A00A2B993 /* WESAcronymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE1461A4BE94A00A2B993 /* WESAcronymViewController.m */; };
 		3E4FE14A1A4BE97900A2B993 /* WESAcronym.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FE1491A4BE97900A2B993 /* WESAcronym.m */; };
+		3E64DEB11AFEA671003B61C2 /* WESDrugTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E64DEB01AFEA671003B61C2 /* WESDrugTableCell.m */; };
 		3EC26C811ABA208500FD0A88 /* WESDrugTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC26C801ABA208500FD0A88 /* WESDrugTransition.m */; };
 		3ECB0A8B1AC2536D00A2AAAB /* WESJNC8SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB0A8A1AC2536D00A2AAAB /* WESJNC8SummaryViewController.m */; };
 		3ECB0A8E1AC3590000A2AAAB /* WESQualityOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB0A8D1AC3590000A2AAAB /* WESQualityOfLifeViewController.m */; };
@@ -79,6 +80,8 @@
 		3E4FE1461A4BE94A00A2B993 /* WESAcronymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESAcronymViewController.m; sourceTree = "<group>"; };
 		3E4FE1481A4BE97900A2B993 /* WESAcronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESAcronym.h; sourceTree = "<group>"; };
 		3E4FE1491A4BE97900A2B993 /* WESAcronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESAcronym.m; sourceTree = "<group>"; };
+		3E64DEAF1AFEA671003B61C2 /* WESDrugTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESDrugTableCell.h; sourceTree = "<group>"; };
+		3E64DEB01AFEA671003B61C2 /* WESDrugTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESDrugTableCell.m; sourceTree = "<group>"; };
 		3EC26C7F1ABA208500FD0A88 /* WESDrugTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESDrugTransition.h; sourceTree = "<group>"; };
 		3EC26C801ABA208500FD0A88 /* WESDrugTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESDrugTransition.m; sourceTree = "<group>"; };
 		3ECB0A891AC2536D00A2AAAB /* WESJNC8SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WESJNC8SummaryViewController.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				3EF6F7F71AA6B8C60058D909 /* WESFlowChartTableViewCell.m */,
 				3EF6F7FC1AA7CBE30058D909 /* WESAcronymTableViewCell.h */,
 				3EF6F7FD1AA7CBE30058D909 /* WESAcronymTableViewCell.m */,
+				3E64DEAF1AFEA671003B61C2 /* WESDrugTableCell.h */,
+				3E64DEB01AFEA671003B61C2 /* WESDrugTableCell.m */,
 				3EF6F8041AA7D91F0058D909 /* WESHeaderTableViewCell.h */,
 				3EF6F8051AA7D91F0058D909 /* WESHeaderTableViewCell.m */,
 				3EC26C7F1ABA208500FD0A88 /* WESDrugTransition.h */,
@@ -308,6 +313,7 @@
 				TargetAttributes = {
 					3E4FE10E1A4BD95F00A2B993 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6SZK592LX3;
 					};
 					3E4FE1271A4BD95F00A2B993 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -383,6 +389,7 @@
 				3EC26C811ABA208500FD0A88 /* WESDrugTransition.m in Sources */,
 				3E4FE1401A4BE21200A2B993 /* WESDrugDetailViewController.m in Sources */,
 				3EF6F7F51AA6B8890058D909 /* WESFlowChartTableViewController.m in Sources */,
+				3E64DEB11AFEA671003B61C2 /* WESDrugTableCell.m in Sources */,
 				3EF6F7FB1AA7B7D80058D909 /* WESFlowChartDetailViewController.m in Sources */,
 				3E4FE1181A4BD95F00A2B993 /* AppDelegate.m in Sources */,
 				3E4FE1471A4BE94A00A2B993 /* WESAcronymViewController.m in Sources */,

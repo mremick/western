@@ -20,10 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = self.chartTitle;
-    self.chartImageView.image = self.chartImage;
+    //self.chartImageView.image = self.chartImage;
     
     self.imageView = [[UIImageView alloc] initWithImage:self.chartImage];
-    self.imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    self.imageView.frame = CGRectMake(0, 0, self.view.frame.size.width - 100, self.view.frame.size.height- 300);
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
@@ -33,6 +33,8 @@
     self.chartScrollView.minimumZoomScale = 1.0;
     self.chartScrollView.maximumZoomScale = 4.0;
     self.chartScrollView.contentSize=CGSizeMake(screenWidth, screenHeight);
+    
+    self.imageView.center = CGPointMake(self.view.center.x, self.view.center.y-100);
     [self.chartScrollView addSubview:self.imageView];
     [self.chartScrollView sendSubviewToBack:self.imageView];
 

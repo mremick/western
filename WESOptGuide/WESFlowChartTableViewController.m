@@ -69,7 +69,6 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.flowChartArray count];
 }
@@ -79,6 +78,7 @@
     
     cell.cellImageView.image = [self.flowChartArray objectAtIndex:indexPath.row];
     cell.cellImageView.contentMode = UIViewContentModeScaleToFill;
+    cell.backgroundColor = [UIColor whiteColor];
     cell.titleLabel.text = [self titleForRow:indexPath.row];
     
     return cell;

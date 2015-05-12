@@ -17,6 +17,7 @@
 @property (nonatomic) NSInteger totalScore;
 @property (nonatomic, strong) NSMutableArray *individualScores;
 - (IBAction)clearFieldTapped:(id)sender;
+@property (nonatomic, strong) UIToolbar *toolbar;
 
 @end
 
@@ -52,6 +53,19 @@
                        @"Loses belongings/things",
                        @"Forgetful/poor memory"];
     
+    self.toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    self.toolbar.barStyle = UIBarStyleBlackTranslucent;
+    self.toolbar.items = [NSArray arrayWithObjects:
+                           [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(doneWithNumberPad)],
+                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)],
+                           nil];
+    [self.toolbar sizeToFit];
+    
+}
+
+- (void)doneWithNumberPad {
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning; {
@@ -67,24 +81,37 @@
     WESQualityQuestionCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.delegate = self;
     cell.questionLabel.text = self.questions[indexPath.row];
+    cell.questionScoreTextField.inputAccessoryView = self.toolbar;
     cell.tag = indexPath.row;
     cell.questionScoreTextField.text = self.individualScores[indexPath.row];
     
     return cell;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     WESQualityOfLifeFooterTableViewCell *footerCell = [tableView dequeueReusableCellWithIdentifier:@"footerCell"];
     footerCell.totalScoreLabel.text = [NSString stringWithFormat:@"Total Score: %ld",(long)self.totalScore];
     footerCell.deleagte = self;
-    footerCell.backgroundColor = [UIColor redColor];
     footerCell.tag = 77;
     return footerCell;
+
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 55;
 }
+
+//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+//    WESQualityOfLifeFooterTableViewCell *footerCell = [tableView dequeueReusableCellWithIdentifier:@"footerCell"];
+//    footerCell.totalScoreLabel.text = [NSString stringWithFormat:@"Total Score: %ld",(long)self.totalScore];
+//    footerCell.deleagte = self;
+//    footerCell.tag = 77;
+//    return footerCell;
+//}
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+//    return 55;
+//}
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     

@@ -10,4 +10,6 @@
 
 @interface WESJNC8SummaryViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end

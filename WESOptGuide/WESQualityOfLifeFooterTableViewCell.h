@@ -18,6 +18,7 @@
 @interface WESQualityOfLifeFooterTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *totalScoreLabel;
 - (IBAction)calculateTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *calculateButton;
 
 @property (nonatomic, weak) id <WESCalculateSurveyDelegate> deleagte;
 

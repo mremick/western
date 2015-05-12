@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSMutableArray *individualScores;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSInteger totalScore;
+@property (nonatomic, strong) UIToolbar *toolbar;
+
 
 - (IBAction)clearButtonTapped:(id)sender;
 
@@ -26,6 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.navigationController.navigationBar setTranslucent:NO];
+
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -51,6 +55,19 @@
                        @"Do you have to re-read the same line or words when reading or doing close work?",
                        @"Does not use his/her time well"];
     
+    self.toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    self.toolbar.barStyle = UIBarStyleBlackTranslucent;
+    self.toolbar.items = [NSArray arrayWithObjects:
+                          [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(doneWithNumberPad)],
+                          [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                          [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)],
+                          nil];
+    [self.toolbar sizeToFit];
+    
+}
+
+- (void)doneWithNumberPad {
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning; {
@@ -70,23 +87,23 @@
     WESQualityQuestionCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.delegate = self;
     cell.questionLabel.text = self.questions[indexPath.row];
+    cell.questionScoreTextField.inputAccessoryView = self.toolbar;
     cell.tag = indexPath.row;
     cell.questionScoreTextField.text = self.individualScores[indexPath.row];
     
     return cell;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     WESQualityOfLifeFooterTableViewCell *footerCell = [tableView dequeueReusableCellWithIdentifier:@"footerCell"];
     footerCell.totalScoreLabel.text = [NSString stringWithFormat:@"Total Score: %ld",(long)self.totalScore];
-    footerCell.backgroundColor = [UIColor redColor];
     footerCell.tag = 78;
     footerCell.deleagte = self;
     return footerCell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 55;
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 68;
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
