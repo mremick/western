@@ -98,7 +98,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 55;
+    return 68;
 }
 
 //- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
@@ -164,11 +164,5 @@
 
 - (void)calculateSurveyTapped:(WESQualityOfLifeFooterTableViewCell *)cell {
     
-    NSString *title = [NSString stringWithFormat:@"Total score: %ld",(long)self.totalScore];
-    NSString *message  = [NSString stringWithFormat:@"Based off of the totaled score <message here>"];
-    
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    
-    [alertView show];
 }
 @end

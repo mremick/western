@@ -97,6 +97,10 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     WESQualityOfLifeFooterTableViewCell *footerCell = [tableView dequeueReusableCellWithIdentifier:@"footerCell"];
     footerCell.totalScoreLabel.text = [NSString stringWithFormat:@"Total Score: %ld",(long)self.totalScore];
+    footerCell.calculateButton.clipsToBounds = YES;
+    footerCell.calculateButton.layer.cornerRadius = 25.f;
+    footerCell.calculateButton.layer.borderWidth = 2.0;
+    footerCell.calculateButton.layer.borderColor = [UIColor whiteColor].CGColor;
     footerCell.tag = 78;
     footerCell.deleagte = self;
     return footerCell;
@@ -147,11 +151,6 @@
 
 - (void)calculateSurveyTapped:(WESQualityOfLifeFooterTableViewCell *)cell {
     
-    NSString *title = [NSString stringWithFormat:@"Total score: %ld",(long)self.totalScore];
-    NSString *message  = [NSString stringWithFormat:@"Based off of the totaled score <message here>"];
-    
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    
-    [alertView show];
+
 }
 @end

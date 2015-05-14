@@ -268,10 +268,10 @@
     }
     cell.brandLabel.text = drug.brand;
     //cell.detailLabel.text = [drug.genericName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];;
-    cell.genericNameLabel.text = drug.genericName;
-    cell.manufacturerLabel.text = drug.manufacturer;
-    cell.dosageLabel.text = drug.dosage;
-    cell.pediatricUseLabel.text = drug.pediactricUse;
+    cell.genericNameLabel.text = [NSString stringWithFormat:@"Generic name: %@",drug.genericName];
+    cell.manufacturerLabel.text = [NSString stringWithFormat:@"Manufacturer: %@",drug.manufacturer];
+    cell.dosageLabel.text = [NSString stringWithFormat:@"Dosage: %@",drug.dosage];
+    cell.pediatricUseLabel.text = [NSString stringWithFormat:@"Pediactric use: %@",drug.pediactricUse];
     return cell;
 }
 
